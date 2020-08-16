@@ -10,7 +10,10 @@
     <meta name="description"
           content="Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier kannst du es herausfinden - für die Region Rhein-Neckar"/>
 
-    <link rel="stylesheet" href="css/3632ede4.tw-mannheim.min.css">
+    <!-- build:css css/tw-mannheim.min.css -->
+    <link href="css/bootstrap-cyborg.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- endbuild -->
 
     <!--[if gte IE 9]>
     <style type="text/css">
@@ -847,7 +850,22 @@
     </div>
 </div>
 
-<script src="js/aef79bfb.tw-mannheim.min.js"></script>
+<!-- build:js js/tw-mannheim.min.js -->
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<!-- Production version -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="lib/d3.js"></script>
+<script src="lib/colorbrewer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/utils.js"></script>
+<script src="data/locations-mannheim.js"></script>
+<script src="data/zones-mannheim.js"></script>
+<script src="data/mineralwaesser.js"></script>
+<script src="js/gauge.js"></script>
+<script src="js/comparison.js"></script>
+<script src="js/map.js"></script>
+<!-- endbuild -->
 <script type="text/javascript">
     $(document).ready(function () {
         tw.init();
